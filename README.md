@@ -1,3 +1,39 @@
+I have used claude to package the Android Auto Files from Squooky and the SSH unlocker. 
+Requirements:
+-ENet Cable w/ ENet to USB C adapter (or your phone's matching USB port form factor)
+-Wifi/Data connetion
+-Android's ethernet tethering must be enabled AFTER connecting to the car's ports and attaching to phone
+
+Instructions:
+1.) Download the app from the Release section "app-release.apk" 
+
+2.) Install APK on your Android Phone
+
+3.) Connect USB C to ENet adapter with car in key on engine off
+
+4.) Enable Ethernet Tethering in Settings on Android Phone
+
+5.) Open App and ensure you have green check boxes for connectivity, wait a few seconds for your car to be detected, setup should continue to the next screen on its own.
+
+6.) Select "This is my car - Continute" (You may need to choose the "Use this one" button if multiple are listed and a failure occures)
+
+7.) Select "Enable SSH", after a few seconds the install screen should appear
+
+8.) Select "Find Head unit" Once
+
+9.) Ensure Battery on Android Phone is over 20% for flash, then select "Install Now"
+
+10.) After install completes, hold the power button/volume knob on radio for 30 seconds/until radio reboots
+
+As mentioned below, do not expect it to work out of the box, you most likely will need to delete your phone from the connected devices and reconnect it as a bluetooth media/music device. Then select the Android Auto Tab and "Open Android Auto"
+
+Hope this helps!
+
+PS: There are extra debug features to backup and restore all changes, log all interactions with the vehicle and log errors that can be used for repairs later to the app/installer. Some debug features may not work as intended, but main flow appears to work perfect. All credit to Squooky and the SSH Unlock tool
+
+____________________________________
+
+
 # Overview
 I'm a believer of humans writing things, but this is well beyond my skillset, so I (me, Ronnie) am writing this (the words on the page you're reading). I'm not a C-dev, but I do know these things can be done... So... This repository contains code for the J29 Toyota Supra to run Android Auto natively on the NBT Evo head unit. Yeah, talk about a big one. I'll preface it with this: Big screw you to all the companies who have profited for **years** on MMI units. You could have drove innovation, yet you chose to implement a "just good enough" solution to get people to bite. Okay, now that that's out of the way...
 
